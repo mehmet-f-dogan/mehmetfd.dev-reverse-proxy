@@ -65,7 +65,7 @@ func main() {
 	mux := http.NewServeMux()
 
 	s := &http.Server{
-		Addr:    ":" + os.Getenv("INCOMING_PORT"),
+		Addr:    ":" + os.Getenv("ACCEPT_PORT"),
 		Handler: mux,
 	}
 
